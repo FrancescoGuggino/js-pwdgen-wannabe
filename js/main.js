@@ -6,7 +6,6 @@ let favoriteColor = prompt ("Inserisci il tuo colore preferito:");
 let number = 21;
 
 
-
 //preparazione password
 
 let password = nome + surname + favoriteColor + number;
@@ -14,13 +13,19 @@ let password = nome + surname + favoriteColor + number;
 //dati aggiuntivi per password più complessa
 
 let numberOne = prompt ("Inserisci un numero:");
-let
+let numberTwo = prompt ("Inserisci un'altro numero:");
+
+let passwordHard = nome + surname + favoriteColor + numberOne / numberTwo;
 
 //password a console
 
 console.log (`La tua password è:
  ${password}`);  
 
+console.log (`La tua password più complessa è:
+${passwordHard}`);
+
 //stampo html
 
 document.getElementById("password").innerHTML = password
+document.getElementById("passwordHard").innerHTML = passwordHard
